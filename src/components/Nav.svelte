@@ -59,9 +59,10 @@
 				<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li>
 				<li><a aria-current="{segment === 'civilite' ? 'page' : undefined}" href="civilite">Civilité</a></li>
 				<li><a aria-current="{segment === 'culture' ? 'page' : undefined}" href="culture">Culture</a></li>
-				<li><a aria-current="{segment === 'education' ? 'page' : undefined}" href="education">Education</a></li>
-				<li><a aria-current="{segment === 'evolution' ? 'page' : undefined}" href="evolution">evolution</a></li>
+				<!-- <li><a aria-current="{segment === 'education' ? 'page' : undefined}" href="education">Education</a></li>
+				<li><a aria-current="{segment === 'evolution' ? 'page' : undefined}" href="evolution">evolution</a></li> -->
 				<li><a aria-current="{segment === 'informatique' ? 'page' : undefined}" href="informatique">Informatique</a></li>
+				<li><a aria-current="{segment === 'astronomie' ? 'page' : undefined}" href="astronomie">astronomie</a></li>
 		
 				<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 					 the blog data when we hover over the link or tap it on a touchscreen -->
