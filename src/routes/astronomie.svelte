@@ -2,4 +2,4 @@
   import Header from '../components/Header.svelte'
 </script>
 
-<Header pageTitle="Astronomie"></Header>
+<!-- <Header pageTitle="Astronomie"></Header> -->

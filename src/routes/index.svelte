@@ -36,7 +36,7 @@
 	}
 </style>
 
-<Header pageTitle="Bienvenue!" />
+<!-- <Header pageTitle="Bienvenue!" /> -->
 
 
 <section>

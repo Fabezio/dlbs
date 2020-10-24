@@ -1,7 +1,7 @@
 <script>
 	import Header from '../components/Header.svelte';
 </script>
-<Header pageTitle="civilité" />
+<!-- <Header pageTitle="civilité" /> -->
 
 <article>
     <h3>Définition</h3>

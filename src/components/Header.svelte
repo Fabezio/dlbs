@@ -1,15 +1,16 @@
 <script>
+	// import { segment } from './../../__sapper__/dev/server/server.js';
     export let brand = "Dans le Bon Sens"
-    export let pageTitle
+    export let segment = ""
 </script>
 
 <svelte:head>
-    <title>
-        {brand} | {pageTitle}
+    <title >
+        {brand} | {segment}
 
     </title>
 </svelte:head>
 
-<header>
-    <h1>{pageTitle}</h1>
+<header class="text-center my-4">
+    <h1 class="text-uppercase">{segment}</h1>
 </header>

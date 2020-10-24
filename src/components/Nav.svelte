@@ -48,7 +48,7 @@
 	}
 </style>
 
-<nav>
+<nav class="text-uppercase">
 	<ul>
 		<li>
 			<div class="brand">DANS LE BON SENS</div>

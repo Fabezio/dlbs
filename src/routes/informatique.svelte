@@ -1,7 +1,7 @@
 <script>
 	import Header from '../components/Header.svelte';
 </script>
-<Header pageTitle="informatique" />
+<!-- <Header pageTitle="informatique" /> -->
 
 <article>
   <h3>Définition</h3>
