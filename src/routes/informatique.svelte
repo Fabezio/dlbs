@@ -4,11 +4,11 @@
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
-  export let segment
+  // export let segment
 </script>
 <!-- <Header pageTitle="informatique" /> -->
 
-<Header {segment} />
+<Header title="informatique" />
 <Main>
 	<div slot="side">
 		<LeftSide>

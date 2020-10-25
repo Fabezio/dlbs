@@ -49,7 +49,7 @@
 		display: block;
 	} */
 </style>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <!-- <nav class="text-uppercase"> -->
 	<a class="navbar-brand" href=".">DANS LE BON SENS</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,9 +63,9 @@
 			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'culture' ? 'page' : undefined}" href="culture">Culture</a></li>
 			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'informatique' ? 'page' : undefined}" href="informatique">Informatique</a></li>
 			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'astronomie' ? 'page' : undefined}" href="astronomie">astronomie</a></li>
-			<!-- <li><a aria-current="{segment === 'education' ? 'page' : undefined}" href="education">Education</a></li>
-			<li><a aria-current="{segment === 'evolution' ? 'page' : undefined}" href="evolution">evolution</a></li> -->
-
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'education' ? 'page' : undefined}" href="education">Education</a></li>
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'evolution' ? 'page' : undefined}" href="evolution">evolution</a></li>
+			
 			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 					the blog data when we hover over the link or tap it on a touchscreen -->
 			<!-- 

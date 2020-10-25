@@ -2,8 +2,12 @@
   import Header from '../components/Header.svelte';
   import Main from '../components/Main.svelte'
   import LeftSide from '../components/Main/LeftSide.svelte'
-  import Definition from '../components/Main/Definition.svelte'
+  import Definitions from '../components/Main/Definitions.svelte'
   import Article from '../components/Main/Article.svelte'
+  const defs = [
+    "Mouvement réglé de troupes",
+    "(Au pluriel: ) Suite de mouvements variés",
+  ]
   // export let segment
 </script>
 <Header title="évolution" />
@@ -15,16 +19,12 @@
 		</LeftSide>
 	</div>
 	<div >
-    <Definition>
-      <p>1.
-Mouvement réglé de troupes.
-2.
-au pluriel<br>
-Suite de mouvements variés.
+    <Definitions {defs} />
+      
       <!-- Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers. -->
-      </p>
+      <!-- </p> -->
     
-    </Definition>
+    <!-- </Definition> -->
     <Article>
       <div slot="content">
 

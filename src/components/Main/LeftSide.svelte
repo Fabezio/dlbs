@@ -3,5 +3,8 @@
 </script>
 
 <div class="text-uppercase">
-    <slot />
+    <ul>
+        <slot />
+
+    </ul>
 </div>
