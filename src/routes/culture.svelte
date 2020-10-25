@@ -5,7 +5,7 @@
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
-  
+  // export let segment
   const labels = [
     'enrichissement',
     'connaissances',
@@ -16,8 +16,8 @@
 	// import LeftSide from '../components/LeftSide.svelte';
 </script>
 <!-- <Header pageTitle="culture" /> -->
-
-
+<Header title="culture" />
+<!-- <Header {segment} /> -->
 <Main>
 	<div slot="side">
 		<LeftSide >
@@ -31,7 +31,7 @@
                 <!-- <LeftSide {labels}> -->
 		</LeftSide>
 	</div>
-	<div slot="global" >
+	<div  >
     <Definition title="Définitions">
       <ul>
         <li><q>Enrichissement de l'esprit par des exercices intellectuels;</q></li>

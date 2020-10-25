@@ -1,27 +1,32 @@
 <script>
 	
-	// import Header from '../components/Header.svelte';
+	import Header from '../components/Header.svelte';
 	import Main from '../components/Main.svelte';
 	import LeftSide from '../components/Main/LeftSide.svelte';
 	// import Definition from '../components/Main/Definition.svelte';
 	import Article from '../components/Main/Article.svelte';
 	// export let segment
+	// export let segArr
+	// export const pageTitle = "Accueil"
 </script>
-<!-- <Header pageTitle="Bienvenue!" /> -->
 
-
+<Header title="accueil" header="Bienvenue!" />
+<!-- <Header {segment} /> -->
 <Main>
 	<div slot="side">
 		<LeftSide>
+			<ul>
+				<li>Accueil</li>
+			</ul>
 			<p>y'a rien là</p>
 		</LeftSide>
 	</div>
-	<div slot="global" >
+	<div >
 		<Article>
 			<div slot="content">
 
 			
-			<h2>Bienvenue</h2>
+			<!-- <h2>Bienvenue</h2> -->
 			<p>Ce site a pour vocation de guider les visiteurs dans leur quête visant à:</p>
 			<ul>
 			  <li>approfondir des connaissances,</li>

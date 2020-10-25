@@ -4,23 +4,24 @@
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
+  // export let segment
 </script>
-<!-- <Header pageTitle="evolution" /> -->
-
+<Header title="évolution" />
+<!-- <Header {segment} /> -->
 <Main>
 	<div slot="side">
 		<LeftSide>
 
 		</LeftSide>
 	</div>
-	<div slot="global" >
+	<div >
     <Definition>
       <p>1.
 Mouvement réglé de troupes.
 2.
 au pluriel<br>
 Suite de mouvements variés.
-      Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers.
+      <!-- Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers. -->
       </p>
     
     </Definition>

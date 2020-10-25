@@ -1,13 +1,14 @@
 <script>
-  import Header from '../components/Header.svelte';
+	import Header from '../components/Header.svelte';
   import Main from '../components/Main.svelte'
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
+  export let segment
 </script>
 <!-- <Header pageTitle="informatique" /> -->
 
-
+<Header {segment} />
 <Main>
 	<div slot="side">
 		<LeftSide>
@@ -20,7 +21,7 @@
 
 		</LeftSide>
 	</div>
-	<div slot="global" >
+	<div >
     <Definition>
       <!-- Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers. -->
       <q>Science du traitement rationnel, notamment par machines automatiques, de l'information considérée comme le support des connaissances humaines et des communications dans les domaines technique, économique et social (définition académique)</q>

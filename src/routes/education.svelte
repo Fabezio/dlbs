@@ -4,9 +4,10 @@
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
+  // export let segment
 </script>
-<!-- <Header pageTitle="education" /> -->
-
+<Header title="éducation" />
+<!-- <Header {segment} /> -->
 <Main>
 	<div slot="side">
 		<LeftSide>
@@ -19,7 +20,7 @@
     </ul>
     </LeftSide>
 	</div>
-	<div slot="global" >
+	<div  >
     <Definition>
       <ol>
         <li><q>Enrichissement de l'esprit par des exercices intellectuels;</q></li>

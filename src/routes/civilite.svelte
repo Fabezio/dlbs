@@ -4,18 +4,19 @@
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
+  // export let segment
 </script>
 <!-- <Header pageTitle="civilité" /> -->
 
 
-
+<Header title="civilité" />
 <Main>
 	<div slot="side">
 		<LeftSide>
       Transports
 		</LeftSide>
 	</div>
-	<div slot="global" >
+	<div  >
     <Definition>
       Observation des convenances en usage chez les gens qui vivent en société; politesse, courtoisie
     

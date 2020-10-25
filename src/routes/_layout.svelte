@@ -8,8 +8,11 @@
 	import Article from '../components/Main/Article.svelte';
 	import Footer from '../components/Footer.svelte';
 	export let segment;
-	$: if (segment == undefined) segment = "accueil"
-	$: console.log(segment)
+	const segArr = []
+	segArr[0] = segment
+	const pageTitle = segArr[0] || "Bienvenue!"
+	// $: if (segment == undefined) pageTitle = "Bienvenue!"
+	// $: console.log(pageTitle)
 
 </script>
 <!-- 
@@ -25,9 +28,13 @@
 </style> -->
 
 <Nav {segment}/>
-<Header {segment} />
+<!-- <Header {pageTitle } /> -->
 <!-- <Main >
 </Main> -->
+<div class="mt-5">
 	<slot />
+
+</div>
+
 
 <Footer />

@@ -11,7 +11,7 @@
         <!-- <LeftSide /> -->
     </div>
     <div class="col-md-10 col-sm-12">
-        <slot name="global" />
+        <slot />
         <!-- <Definition />
         <Article >
             <slot />

@@ -8,14 +8,18 @@
 
 </script>
 
-
+<Header title="astronomie" />
 <Main>
 	<div slot="side">
 		<LeftSide>
+      <ul>
+        <li>disciplines</li>
+        <li>autres</li>
+      </ul>
 
 		</LeftSide>
 	</div>
-	<div slot="global" >
+	<div >
     <Definition>
       Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers.
     

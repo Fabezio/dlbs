@@ -1,9 +1,10 @@
 <script>
 	export let segment;
+	
 </script>
 
 <style>
-	nav {
+	/* nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
@@ -15,6 +16,7 @@
 	}
 
 	/* clearfix */
+	/*
 	ul::after {
 		content: '';
 		display: block;
@@ -45,7 +47,7 @@
 		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
-	}
+	} */
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <!-- <nav class="text-uppercase"> -->
@@ -56,11 +58,11 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto text-capitalize font-weight-300">
 			
-			<li class="nav-item active"><a class="nav-link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li>
-			<li class="nav-item active"><a class="nav-link" aria-current="{segment === 'civilite' ? 'page' : undefined}" href="civilite">Civilité</a></li>
-			<li class="nav-item active"><a class="nav-link" aria-current="{segment === 'culture' ? 'page' : undefined}" href="culture">Culture</a></li>
-			<li class="nav-item active"><a class="nav-link" aria-current="{segment === 'informatique' ? 'page' : undefined}" href="informatique">Informatique</a></li>
-			<li class="nav-item active"><a class="nav-link" aria-current="{segment === 'astronomie' ? 'page' : undefined}" href="astronomie">astronomie</a></li>
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li>
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'civilite' ? 'page' : undefined}" href="civilite">Civilité</a></li>
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'culture' ? 'page' : undefined}" href="culture">Culture</a></li>
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'informatique' ? 'page' : undefined}" href="informatique">Informatique</a></li>
+			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'astronomie' ? 'page' : undefined}" href="astronomie">astronomie</a></li>
 			<!-- <li><a aria-current="{segment === 'education' ? 'page' : undefined}" href="education">Education</a></li>
 			<li><a aria-current="{segment === 'evolution' ? 'page' : undefined}" href="evolution">evolution</a></li> -->
 
