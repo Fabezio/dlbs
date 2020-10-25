@@ -1,7 +1,58 @@
 <script>
-	import Header from '../components/Header.svelte';
+	
+	// import Header from '../components/Header.svelte';
+	import Main from '../components/Main.svelte';
+	import LeftSide from '../components/Main/LeftSide.svelte';
+	// import Definition from '../components/Main/Definition.svelte';
+	import Article from '../components/Main/Article.svelte';
+	// export let segment
 </script>
+<!-- <Header pageTitle="Bienvenue!" /> -->
 
+
+<Main>
+	<div slot="side">
+		<LeftSide>
+			<p>y'a rien là</p>
+		</LeftSide>
+	</div>
+	<div slot="global" >
+		<Article>
+			<div slot="content">
+
+			
+			<h2>Bienvenue</h2>
+			<p>Ce site a pour vocation de guider les visiteurs dans leur quête visant à:</p>
+			<ul>
+			  <li>approfondir des connaissances,</li>
+			  <li>satisfaire leur curiosité,</li>
+			  <li>rechercher des liens,</li>
+			  <li>etc.</li>
+			</ul>
+			<p>Plusieurs rubriques éducatives sont disponibles et contiennent textes, médias et liens.<br />Vous y trouverez:</p>
+			<ul>
+			  <li>les principes relatifs aux civilités avec les conduites à tenir (transports, secours, savoir vivre),</li>
+			  <li>l’éducation (scolaire, parentale, professionnelle),</li>
+			  <li>l’informatique,</li>
+			  <li>les sciences,</li>
+			  <li>les orientations professionnelles.</li>
+			</ul>
+			<p>En clair il s’agit d’un supermarché de l’information. Des liens sont disponibles ci-dessous pour vous permettre de me faire part de vos remarques et suggestions, lesquelles sont vivement encouragées! En effet l’enrichissement d’un site provient toujours d’un travail en communauté.</p>
+			<p>Sur ce assez de blabla, place à l’info. Car le savoir est aussi un devoir</p>
+</div>
+		</Article>
+
+	</div>
+
+</Main>
+<!-- <section>
+	
+	<article>
+	</article>
+	<aside></aside>
+  </section> -->
+
+<!-- 
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -35,30 +86,5 @@
 		}
 	}
 </style>
+ -->
 
-<!-- <Header pageTitle="Bienvenue!" /> -->
-
-
-<section>
-	
-	<article>
-	  <p>Ce site a pour vocation de guider les visiteurs dans leur quête visant à:</p>
-	  <ul>
-		<li>approfondir des connaissances,</li>
-		<li>satisfaire leur curiosité,</li>
-		<li>rechercher des liens,</li>
-		<li>etc.</li>
-	  </ul>
-	  <p>Plusieurs rubriques éducatives sont disponibles et contiennent textes, médias et liens.<br />Vous y trouverez:</p>
-	  <ul>
-		<li>les principes relatifs aux civilités avec les conduites à tenir (transports, secours, savoir vivre),</li>
-		<li>l’éducation (scolaire, parentale, professionnelle),</li>
-		<li>l’informatique,</li>
-		<li>les sciences,</li>
-		<li>les orientations professionnelles.</li>
-	  </ul>
-	  <p>En clair il s’agit d’un supermarché de l’information. Des liens sont disponibles ci-dessous pour vous permettre de me faire part de vos remarques et suggestions, lesquelles sont vivement encouragées! En effet l’enrichissement d’un site provient toujours d’un travail en communauté.</p>
-	  <p>Sur ce assez de blabla, place à l’info. Car le savoir est aussi un devoir</p>
-	</article>
-	<aside></aside>
-  </section>

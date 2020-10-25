@@ -1,16 +1,35 @@
 <script>
-	import Header from '../components/Header.svelte';
+  import Header from '../components/Header.svelte';
+  import Main from '../components/Main.svelte'
+  import LeftSide from '../components/Main/LeftSide.svelte'
+  import Definition from '../components/Main/Definition.svelte'
+  import Article from '../components/Main/Article.svelte'
 </script>
 <!-- <Header pageTitle="evolution" /> -->
 
-<article>
-    <h3>Définition</h3>
-    <section>
-      <p><em></em></p>
-      <h3></h3>
-      <p></p>
-    </section>
-    <aside>
-      <p><em></em></p>
-    </aside>
-  </article>
+<Main>
+	<div slot="side">
+		<LeftSide>
+
+		</LeftSide>
+	</div>
+	<div slot="global" >
+    <Definition>
+      <p>1.
+Mouvement réglé de troupes.
+2.
+au pluriel<br>
+Suite de mouvements variés.
+      Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers.
+      </p>
+    
+    </Definition>
+    <Article>
+      <div slot="content">
+
+        article à venir
+      </div>
+
+    </Article>
+  </div>
+</Main>

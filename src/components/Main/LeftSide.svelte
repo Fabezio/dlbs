@@ -2,11 +2,6 @@
     export let labels = []
 </script>
 
-<aside>
-    <ul>
-        {#each labels as label}
-        <li class="text-capitalize"><a href={label}>{label}</a></li>
-        {/each}
-    </ul>
+<div class="text-uppercase">
     <slot />
-</aside>
+</div>

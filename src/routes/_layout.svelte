@@ -26,8 +26,8 @@
 
 <Nav {segment}/>
 <Header {segment} />
-<Main >
-</Main>
+<!-- <Main >
+</Main> -->
 	<slot />
 
 <Footer />

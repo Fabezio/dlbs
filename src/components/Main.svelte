@@ -6,13 +6,15 @@
 
 <div class="row">
 
-    <div class="col-md-3 col-sm-12">
-        <LeftSide />
+    <div class="col-md-2 col-sm-12">
+        <slot name="side" />
+        <!-- <LeftSide /> -->
     </div>
-    <div class="col-md-9 col-sm-12">
-        <Definition />
+    <div class="col-md-10 col-sm-12">
+        <slot name="global" />
+        <!-- <Definition />
         <Article >
             <slot />
-        </Article>
+        </Article> -->
     </div>
 </div>

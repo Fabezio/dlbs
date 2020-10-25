@@ -6,6 +6,7 @@ const date = new Date().getFullYear()
     }, 1000)
 </script>
 
-<footer>
+<footer class="fixed-bottom bg-secondary w-100 text-center py-2 text-light rounded-top">
+    Dans Le Bon Sens &copy; - 
     {date}
 </footer>
