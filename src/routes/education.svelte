@@ -10,21 +10,21 @@
     "Développement méthodique (d'une faculté, d'un organe).",
   ]
 </script>
-<Header title="éducation" />
 <!-- <Header {segment} /> -->
 <Main>
-	<div slot="side">
-		<LeftSide>
+  <div slot="side">
+    <LeftSide>
       <ul>
         <li>pas encore défini</li>
         <!-- <li>Connaissances</li>
-        <li>Phénomènes</li>
-        <li>Signes</li>
-        <li>Traditions</li> -->
-    </ul>
-    </LeftSide>
-	</div>
-	<div  >
+          <li>Phénomènes</li>
+          <li>Signes</li>
+          <li>Traditions</li> -->
+        </ul>
+      </LeftSide>
+    </div>
+    <div  >
+      <Header title="éducation" />
     <Definitions {defs}>
       <!-- <ol>
         <li><q>Enrichissement de l'esprit par des exercices intellectuels;</q></li>

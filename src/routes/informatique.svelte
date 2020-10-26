@@ -5,23 +5,23 @@
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
   // export let segment
+  const labels = [
+    "Windows",
+    "Mac",
+    "BSD",
+    "GNU / Linux",
+    
+      ]
 </script>
 <!-- <Header pageTitle="informatique" /> -->
 
-<Header title="informatique" />
 <Main>
-	<div slot="side">
-		<LeftSide>
-      <ul>
-        <li>Windows</li>
-        <li>Mac</li>
-        <li>BSD</li>
-        <li>GNU / Linux</li>
-      </ul>
-
-		</LeftSide>
+  <div slot="side">
+    <LeftSide {labels} />
+      
 	</div>
 	<div >
+    <Header title="informatique" />
     <Definition>
       <!-- Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers. -->
       <q>Science du traitement rationnel, notamment par machines automatiques, de l'information considérée comme le support des connaissances humaines et des communications dans les domaines technique, économique et social (définition académique)</q>

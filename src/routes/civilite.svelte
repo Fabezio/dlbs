@@ -9,17 +9,17 @@
 <!-- <Header pageTitle="civilité" /> -->
 
 
-<Header title="civilité" />
 <Main>
-	<div slot="side">
-		<LeftSide>
+  <div slot="side">
+    <LeftSide>
       Transports
 		</LeftSide>
 	</div>
 	<div  >
+    <Header title="civilité" />
     <Definition>
       Observation des convenances en usage chez les gens qui vivent en société; politesse, courtoisie
-    
+      
     </Definition>
     <Article>
       <div slot="content">

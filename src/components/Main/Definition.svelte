@@ -3,7 +3,7 @@
 </script>
 
 <h3>{title}</h3>
+<q><em>
 <slot></slot>
-    <!-- <q><em>
 
-</em></q> -->
+</em></q>

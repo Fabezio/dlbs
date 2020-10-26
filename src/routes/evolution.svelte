@@ -10,15 +10,15 @@
   ]
   // export let segment
 </script>
-<Header title="évolution" />
 <!-- <Header {segment} /> -->
 <Main>
-	<div slot="side">
-		<LeftSide>
-
-		</LeftSide>
+  <div slot="side">
+    <LeftSide>
+      Pas encore défini
+    </LeftSide>
 	</div>
 	<div >
+    <Header title="évolution" />
     <Definitions {defs} />
       
       <!-- Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers. -->

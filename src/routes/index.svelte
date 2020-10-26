@@ -10,18 +10,16 @@
 	// export const pageTitle = "Accueil"
 </script>
 
-<Header title="accueil" header="Bienvenue!" />
 <!-- <Header {segment} /> -->
 <Main>
 	<div slot="side">
 		<LeftSide>
-			<ul>
-				<li>Accueil</li>
-			</ul>
-			<p>y'a rien là</p>
+			
+			<span>y'a rien là</span>
 		</LeftSide>
 	</div>
 	<div >
+		<Header title="accueil" header="Bienvenue!" />
 		<Article>
 			<div slot="content">
 

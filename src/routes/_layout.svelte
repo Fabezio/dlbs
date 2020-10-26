@@ -31,7 +31,7 @@
 <!-- <Header {pageTitle } /> -->
 <!-- <Main >
 </Main> -->
-<div class="mt-5">
+<div >
 	<slot />
 
 </div>

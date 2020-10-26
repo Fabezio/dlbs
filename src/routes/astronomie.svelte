@@ -5,21 +5,19 @@
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
   import Article from '../components/Main/Article.svelte'
-
+  const labels = [
+    "disciplines",
+    "autres"
+  ]
 </script>
 
-<Header title="astronomie" />
 <Main>
-	<div slot="side">
-		<LeftSide>
-      <ul>
-        <li>disciplines</li>
-        <li>autres</li>
-      </ul>
-
-		</LeftSide>
+  <div slot="side">
+    <LeftSide {labels} />
+      
 	</div>
 	<div >
+    <Header title="astronomie" />
     <Definition>
       Science des astres, des corps célestes (y compris la Terre) et de la structure de l'univers.
     

@@ -24,23 +24,15 @@
 	// import LeftSide from '../components/LeftSide.svelte';
 </script>
 <!-- <Header pageTitle="culture" /> -->
-<Header title="culture" />
 <!-- <Header {segment} /> -->
 <Main>
-	<div slot="side">
-		<LeftSide >
-      <ul>
-          <li>Enrichissement</li>
-          <li>Connaissances</li>
-          <li>Phénomènes</li>
-          <li>Signes</li>
-          <li>Traditions</li>
-        </ul>
-                <!-- <LeftSide {labels}> -->
-		</LeftSide>
-	</div>
-	<div  >
-    <Definitions {defs} />
+  <div slot="side">
+    <LeftSide {labels} />
+    
+    </div>
+    <div  >
+      <Header title="culture" />
+      <Definitions {defs} />
        
     
     <!-- </Definition> -->
