@@ -16,10 +16,10 @@
 <!-- <Header pageTitle="informatique" /> -->
 
 <Main>
-  <div slot="side">
+  <!-- <div slot="side">
     <LeftSide {labels} />
       
-	</div>
+	</div> -->
 	<div >
     <Header title="informatique" />
     <Definition>

@@ -11,9 +11,9 @@
 
 <Main>
   <div slot="side">
-    <LeftSide>
+    <!-- <LeftSide>
       Transports
-		</LeftSide>
+		</LeftSide> -->
 	</div>
 	<div  >
     <Header title="civilité" />

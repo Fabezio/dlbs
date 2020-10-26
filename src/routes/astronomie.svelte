@@ -1,6 +1,7 @@
 <script>
   import Header from '../components/Header.svelte'
-  // export let segment
+  export let segment
+  import links from '../store/links'
   import Main from '../components/Main.svelte'
   import LeftSide from '../components/Main/LeftSide.svelte'
   import Definition from '../components/Main/Definition.svelte'
@@ -12,10 +13,10 @@
 </script>
 
 <Main>
-  <div slot="side">
-    <LeftSide {labels} />
+  <!-- <div slot="side">
+    <LeftSide {labels} {links} {segment}/>
       
-	</div>
+	</div> -->
 	<div >
     <Header title="astronomie" />
     <Definition>

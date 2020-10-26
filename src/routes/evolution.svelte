@@ -12,11 +12,11 @@
 </script>
 <!-- <Header {segment} /> -->
 <Main>
-  <div slot="side">
+  <!-- <div slot="side">
     <LeftSide>
       Pas encore défini
     </LeftSide>
-	</div>
+	</div> -->
 	<div >
     <Header title="évolution" />
     <Definitions {defs} />

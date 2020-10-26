@@ -5,20 +5,36 @@
 	import LeftSide from '../components/Main/LeftSide.svelte';
 	// import Definition from '../components/Main/Definition.svelte';
 	import Article from '../components/Main/Article.svelte';
-	// export let segment
+	import links from "../store/links"
+	export let segment
 	// export let segArr
 	// export const pageTitle = "Accueil"
 </script>
 
 <!-- <Header {segment} /> -->
 <Main>
-	<div slot="side">
-		<LeftSide>
+	<!-- <div slot="side">
+		<LeftSide labels={links} {segment}>
+
 			
-			<span>y'a rien là</span>
+			<!-- <span>y'a rien là</span> 
 		</LeftSide>
-	</div>
+	</div> -->
 	<div >
+
+		<div class="bg-light py-3 px-auto">
+			<figure  class="text-center">
+				<img src="img/fleche verte.png" height="100" alt="fleche" >
+
+			</figure>
+
+		</div>
+		<!-- <div class="row">
+			<div class="col-offset-1 col-md-8">
+
+			</div>
+		</div>
+		.col-md-8 -->
 		<Header title="accueil" header="Bienvenue!" />
 		<Article>
 			<div slot="content">

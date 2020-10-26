@@ -26,10 +26,10 @@
 <!-- <Header pageTitle="culture" /> -->
 <!-- <Header {segment} /> -->
 <Main>
-  <div slot="side">
+  <!-- <div slot="side">
     <LeftSide {labels} />
     
-    </div>
+    </div> -->
     <div  >
       <Header title="culture" />
       <Definitions {defs} />

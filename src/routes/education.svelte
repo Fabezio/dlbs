@@ -12,17 +12,17 @@
 </script>
 <!-- <Header {segment} /> -->
 <Main>
-  <div slot="side">
+  <!-- <div slot="side">
     <LeftSide>
       <ul>
         <li>pas encore défini</li>
         <!-- <li>Connaissances</li>
           <li>Phénomènes</li>
           <li>Signes</li>
-          <li>Traditions</li> -->
+          <li>Traditions</li>
         </ul>
       </LeftSide>
-    </div>
+    </div> -->
     <div  >
       <Header title="éducation" />
     <Definitions {defs}>
