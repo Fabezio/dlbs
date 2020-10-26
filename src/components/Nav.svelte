@@ -1,7 +1,37 @@
 <script>
+	import links from '../store/links.js'
 	export let segment;
 	
 </script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="text-uppercase"> -->
+	<a class="navbar-brand" href=".">DANS LE BON SENS</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto text-capitalize font-weight-300">
+			{#each links as link}
+				<li class="nav-item text-light">
+					{#if link == "accueil"}
+					<a href="." class="nav-link {segment == undefined ? 'text-light font-weight-bold ': ''}">{link}</a>
+					{:else}
+					<a href={link} class="nav-link {segment == link ? 'text-light font-weight-bold  ': ''}">{link}</a>
+					{/if}
+					<!-- {link} -->
+				</li>
+				{/each}
+			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+					the blog data when we hover over the link or tap it on a touchscreen -->
+			<!-- 
+				<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+			-->
+				
+		</ul>
+	</div>
+	
+</nav>
 
 <style>
 	/* nav {
@@ -49,30 +79,3 @@
 		display: block;
 	} */
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<!-- <nav class="text-uppercase"> -->
-	<a class="navbar-brand" href=".">DANS LE BON SENS</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto text-capitalize font-weight-300">
-			
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li>
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'civilite' ? 'page' : undefined}" href="civilite">Civilité</a></li>
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'culture' ? 'page' : undefined}" href="culture">Culture</a></li>
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'informatique' ? 'page' : undefined}" href="informatique">Informatique</a></li>
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'astronomie' ? 'page' : undefined}" href="astronomie">astronomie</a></li>
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'education' ? 'page' : undefined}" href="education">Education</a></li>
-			<li class="nav-item {() => {if (segment) return 'active'}} "><a class="nav-link" aria-current="{segment === 'evolution' ? 'page' : undefined}" href="evolution">evolution</a></li>
-			
-			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-					the blog data when we hover over the link or tap it on a touchscreen -->
-			<!-- 
-				<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
-			-->
-				
-		</ul>
-	</div>
-	
-</nav>
