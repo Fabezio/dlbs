@@ -5,7 +5,7 @@
   // import Definition from '../components/Main/Definition.svelte';
   import Article from "../components/Main/Article.svelte";
   import links from "../store/links";
-  export let segment;
+  // export let segment;
   // export let segArr
   // export const pageTitle = "Accueil"
 </script>

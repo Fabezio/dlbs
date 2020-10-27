@@ -1,3 +1,5 @@
+
+
 <script>
   export let segment;
   // export let links = []
@@ -9,7 +11,7 @@
   class="text-uppercase vh-100 border-right border-secondary bg-light text-dark px-auto">
   <div class="text-left">
     <ul class="list-group">
-      <!-- <li class="list-group-item pr-5 ">{section}</li> -->
+      <li class="list-group-item pr-5 {segment.length >0 ? 'bg-success ' : 'bg-danger'}">{segment} - {segment.length > 0}</li>
       {#each labels as label}
         {#if label.name == 'accueil'}
           <li
@@ -21,26 +23,28 @@
             class="list-group-item  {segment == label.name ? 'active' : ''}">
             <a href={label.name}>{label.name}</a>
         </li>
-        {#each label.sections as section}
+        {#each label.sections as section, i}
+        <!-- {i} -->
           <!-- {#if segment == label.name || segment == section} -->
             {#if segment == label.name}
               <!-- <li
                 class="list-group-item {segment == label.name ? 'active' : ''} "> -->
               <li
-                class="list-group-item  ">
+                class="list-group-item active ">
                 <div class="ml-3 ">
                   <a class="" href="{label.name}/{section}">
                     {section}
                   </a>
                 </div>
               </li>
-            {:else if section == segment}
+            {:else if  label.sections[i] != section}
               <!-- <li
                 class="list-group-item {segment == section ? 'active' : ''} "> -->
               <li
-                class="list-group-item active">
+                class="list-group-item  ">
+                
                 <div class="ml-3  ">
-                  <a class="text-light active" href="{label.name}/{section}">
+                  <a class="text-light " href="{label.name}/{section}">
                     {section}
                   </a>
                 </div>

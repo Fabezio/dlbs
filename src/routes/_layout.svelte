@@ -8,40 +8,25 @@
   import Footer from "../components/Footer.svelte";
   import extendedLinks from "../store/links2";
   export let segment;
+  const bgColor = "bg-dark";
+  const brand = "dans le bon sens";
   const segArr = [];
-  segArr[0] = segment;
   const pageTitle = segArr[0] || "Bienvenue!";
+  segArr[0] = segment;
   // $: if (segment == undefined) pageTitle = "Bienvenue!"
   // $: console.log(pageTitle)
 </script>
 
-<!--<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>-->
-
-<Nav {segment} />
+<Nav {segment} {bgColor} {brand} />
 <div class="row ">
-  <div class="col-lg-2 col-md-2 col-sm-12">
-    <!-- <slot name="side" /> -->
+  <!-- <div class="col-lg-2 col-md-2 col-sm-12">
+    
     <LeftSide labels={extendedLinks} {segment} />
-  </div>
-  <div class="col-lg-10 col-md-10 col-sm-12">
-    <slot class=" m-0 p-3" />
+  </div> -->
+  <!-- <div class="col-lg-10 col-md-10 col-sm-12"> -->
+  <div class="container text-justify">
+    <slot class=" m-0 p-3 " {segment} {bgColor} {brand} />
   </div>
 </div>
-<!-- <Header {pageTitle } /> -->
-<!-- <Main >
-</Main> -->
-<!-- <div >
-	<slot />
 
-</div> -->
-
-<Footer />
+<Footer {bgColor} {brand} />

@@ -3,7 +3,7 @@ const extendedLinks = [
     {name: "civilite", sections: ["transports"]},
     {name: "culture", sections: ["enrichissement", "connaissances", "phenomenes", "signes", "traditions"]},
     {name: "informatique", sections: ["os", "navigateurs"]},
-    {name: "astronomie", sections: ["disciplines", "autres"]},
+    {name: "astronomie", sections: ["disciplines", "organsimes"]},
     {name: "education", sections: ["individuelle", "groupe", "organisme"]},
     {name: "evolution", sections: ["evolution", "evolutions"]},
     // "civilite",
