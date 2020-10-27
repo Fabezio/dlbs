@@ -1,9 +1,9 @@
 <script>
-  import Header from '../components/Header.svelte';
-  import Main from '../components/Main.svelte'
-  import LeftSide from '../components/Main/LeftSide.svelte'
-  import Definition from '../components/Main/Definition.svelte'
-  import Article from '../components/Main/Article.svelte'
+  import Header from '../../components/Header.svelte';
+  import Main from '../../components/Main.svelte'
+  import LeftSide from '../../components/Main/LeftSide.svelte'
+  import Definition from '../../components/Main/Definition.svelte'
+  import Article from '../../components/Main/Article.svelte'
   // export let segment
 </script>
 <!-- <Header pageTitle="civilité" /> -->
@@ -16,14 +16,14 @@
 		</LeftSide> -->
 	</div>
 	<div  >
-    <Header title="civilité" />
+    <Header title="Transports" />
     <Definition>
       Observation des convenances en usage chez les gens qui vivent en société; politesse, courtoisie
       
     </Definition>
     <Article>
       <div slot="content">
-        <h3>Transports</h3>
+        <!-- <h3>Transports</h3> -->
       <p>
         S'il y a une chose qui énerve tout un chacun, c'est bien le manque de réactivité des usagers dans les transports en commun; par exemple les réseaux ferrés franciliens: aux heures de pointe les trams et métros sont bondés.
         Lors d'une desserte, il est rare de voir les usagers s'effacer de leur propre initiative pour laisser passer un co-usager, beaucoup sont en mode<em>poteau</em>, il faut souvent jouer des coudes pour se faufiler jusqu’au seuil ou donner de la voix.
