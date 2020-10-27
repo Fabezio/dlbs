@@ -13,38 +13,42 @@
       {#each labels as label}
         {#if label.name == 'accueil'}
           <li
-            class="list-group-item {segment == undefined ? 'bg-secondary' : ''} ">
+            class="list-group-item {segment == undefined ? 'active' : ''} ">
             <a href=".">{label.name}</a>
           </li>
         {:else}
           <li
-            class="list-group-item  {segment == label.name ? 'bg-secondary text-light' : ''}">
+            class="list-group-item  {segment == label.name ? 'active' : ''}">
             <a href={label.name}>{label.name}</a>
-          </li>
-        {/if}
+        </li>
         {#each label.sections as section}
-          {#if segment == label.name || segment == section}
+          <!-- {#if segment == label.name || segment == section} -->
             {#if segment == label.name}
+              <!-- <li
+                class="list-group-item {segment == label.name ? 'active' : ''} "> -->
               <li
-                class="list-group-item {segment == label.name ? 'bg-secondary' : 'bg-secondary'} ">
-                <div class="ml-3 text-light">
-                  <a class="text-light" href="{label.name}/{section}">
+                class="list-group-item  ">
+                <div class="ml-3 ">
+                  <a class="" href="{label.name}/{section}">
                     {section}
                   </a>
                 </div>
               </li>
-            {:else if segment == section}
+            {:else if section == segment}
+              <!-- <li
+                class="list-group-item {segment == section ? 'active' : ''} "> -->
               <li
-                class="list-group-item {segment == section ? 'bg-success' : 'bg-secondary'} ">
-                <div class="ml-3 ">
-                  <a class="text-light" href="{label.name}/{section}">
+                class="list-group-item active">
+                <div class="ml-3  ">
+                  <a class="text-light active" href="{label.name}/{section}">
                     {section}
                   </a>
                 </div>
               </li>
             {/if}
-          {/if}
+          <!-- {/if} -->
         {/each}
+        {/if}
         <div class="border-bottom border-secondary opacity-0.5" />
 
         <!-- <li class="list-group-item border-bottom border-dark {() => {(label.name == 'accueil' && segment == undefined) ||  segment  == label.name) ? 'bg-secondary text-light' : ''}} ">{label.name}</li> -->
