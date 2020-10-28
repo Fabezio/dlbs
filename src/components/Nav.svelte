@@ -53,7 +53,7 @@
 </style>
 
 <div class="{bgColor}">
-  <nav class="navbar container navbar-expand-lg navbar-dark {bgColor}">
+  <nav class="navbar container navbar-expand-lg navbar-dark sticky-top {bgColor}">
     <!-- <nav class="text-uppercase"> -->
 
     <a class="navbar-brand" href=".">

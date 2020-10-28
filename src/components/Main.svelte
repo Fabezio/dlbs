@@ -1,7 +1,7 @@
 <script>
-    import LeftSide from './Main/LeftSide.svelte';
-	import Definition from './Main/Definition.svelte';
-	import Article from './Main/Article.svelte';
+    // import LeftSide from './Main/LeftSide.svelte';
+	// import Definition from './Main/Definition.svelte';
+	// import Article from './Main/Article.svelte';
 </script>
 
 <div class="row ">

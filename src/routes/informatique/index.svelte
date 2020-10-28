@@ -1,11 +1,11 @@
 <script>
   import Header from "../../components/Header.svelte";
-  import Main from "../../components/Main.svelte";
-  import LeftSide from "../../components/Main/LeftSide.svelte";
   import Definition from "../../components/Main/Definition.svelte";
   import Article from "../../components/Main/Article.svelte";
+  // import Main from '../../components/Main.svelte'
+  // import LeftSide from '../../components/Main/LeftSide.svelte'
   // export let segment
-  const labels = ["Windows", "Mac", "BSD", "GNU / Linux"];
+  // const labels = ["Windows", "Mac", "BSD", "GNU / Linux"];
 </script>
 
 <Header title="informatique" />

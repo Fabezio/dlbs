@@ -1,12 +1,12 @@
 <script>
-  import links from "../../store/links";
   import Header from "../../components/Header.svelte";
-  import Main from "../../components/Main.svelte";
-  import LeftSide from "../../components/Main/LeftSide.svelte";
   import Definition from "../../components/Main/Definition.svelte";
   import Article from "../../components/Main/Article.svelte";
   export let segment;
-  const labels = ["disciplines", "autres"];
+  // import links from "../../store/links";
+  // import Main from "../../components/Main.svelte";
+  // import LeftSide from "../../components/Main/LeftSide.svelte";
+  // const labels = ["disciplines", "autres"];
 </script>
 
 {segment}
